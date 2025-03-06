@@ -73,6 +73,6 @@ if invalid_commissions_data or missing_exclusions_data or duplicate_merchants_da
         for sheet, data in duplicate_merchants_data.items():
             data.to_excel(writer, sheet_name=sheet, index=False)
 
-    print(f"New file created with multiple sheets: {output_file}")
+    print(f"New file created with multiple sheet: {output_file}")
 else:
     print("No invalid commissions, missing exclusions, or duplicate merchants found.")
